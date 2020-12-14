@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <style>
+    @font-face {
+    font-family: lobster;
+    src: url(lobster.ttf);
+	}
+	@font-face {
+    font-family: pangolin;
+    src: url(pangolin.ttf);
+	}
+	H1 {
+		font-family: lobster;
+		color: #035467;
+		text-shadow: 1px 1px 10px #BEC7C9;
+	}
+	H2 {
+		font-family: lobster;
+		text-shadow: 1px  1px 0px white;
+		color: #0C7B95;
+	}
+   .outline {
+    border: 4px dotted #0C7B95;
+    border-radius: 34px;
+    padding: 0 10px;
+    background-color: white;
+   }
+   body
+   {
+   	font-family: pangolin;
+   	font-size: 125%;
+  	
+   color: black;
+   background-image: url(bg.jpg);
+   }
+  .img  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+   #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 999;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
+}
+
+.popup {
+    top: 25%;
+    left: 0;
+    right: 0;       
+    font-size: 14px;
+    margin: auto;
+    width: 85%;
+    min-width: 320px;
+    max-width: 600px;
+    position: absolute;
+    padding: 15px 20px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    z-index: 1000;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+.close {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 131, 119, 0.9);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+ 
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+  </style>
+  <title>Содержание сайта</title>
+ </head>
+ <body>
+
+  <H1>Добро пожаловать на сайт изготовителя натурального мороженого "Мороженое ВАУ!"</H1>
+  <H2>Кто мы?</H2>
+  	<div class="outline">
+   <p>Мы - люди, которые любят мороженое. Вкусное мороженое. Без заменителей молочного жира, без пальмового масла, без искусственных добавок и консервантов.</p>
+   <p>Именно идея создать такое мороженое, домашнее, своё, и сплотило нас, группу студентов с удачными связями и большим энтузиазмом.</p>
+   <p> К сожалению, пока что мы не готовы познакомиться с вами лично - но как только придет время, мы сделаем это с помпой! </p>
+   <p> А пока ознакомьтесь с нашим <a href="catalog.html">КАТАЛОГОМ </a>и технологиями производства (ниже). </p>
+  </div>
+  <H2>Технологии производства нашего мороженого</H2>
+  	<div class="outline">
+  		<img class = "img" src="iscream.jpg" alt="аппарат" width="25%" >
+   <p>Технология производства мороженого очень интересна. При отсутствии того или иного вида сырья делают перерасчет рецептур. </p>
+
+	<p>При расчете нормативным методом преобразуют основную рецептуру, что позволяет получить новые рецептуры мороженого, различающиеся между собой количественным соотношением компонентов. При этом химический состав мороженого и номенклатура сырья полностью сохраняются.  </p>	
+
+<p>Смесь приготавливают в емкостных пастеризаторах с мешалкой. Предварительно компоненты подготовляют и отвешивают. В первую очередь загружают жидкие компоненты – воду, молоко, сливки, подогревают их до температуры 35-45°С, обеспечивающей наиболее полное и быстрое растворение. Сахарный песок вносят в сухом виде после просеивания или в виде сиропа. Сухие молочные продукты смешивают с сахарным песком в соотношении 1:2 и растворяют в небольшом количестве молока до получения однородной массы. Сгущенные молочные продукты вносят в емкостные пастеризаторы непосредственно. </p>
+  </div>
+
+<div id="overlay">
+    <div class="popup">
+        <h2>Подпишитесь на нашу рассылку!</h2>
+         <p>
+         	(рассылка будет позже)
+         </p>
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+</div>
+<script type="text/javascript">
+        var delay_popup = 5000;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
+ </body>
+</html>
